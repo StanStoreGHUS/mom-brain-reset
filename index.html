@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Mom Brain Reset System — Finally Feel Like Yourself Again</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --plum: #4A2D3A;
+    --plum-mid: #6B4157;
+    --plum-light: #8B5E72;
+    --rose: #C97B7B;
+    --rose-light: #E8A598;
+    --sage: #7A9E8E;
+    --sage-light: #A8C4B8;
+    --sage-xl: #D4E8DE;
+    --linen: #FAF4EE;
+    --champagne: #F2E8D5;
+    --blush: #F7E0DA;
+    --warm-white: #FEFAF6;
+    --body: #2D1F28;
+    --soft: #7A5968;
+    --gold: #C4964A;
+    --gold-light: #E8C88A;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--warm-white);
+    color: var(--body);
+    overflow-x: hidden;
+  }
+
+  /* ── ANNOUNCEMENT BAR ── */
+  .announcement-bar {
+    background: var(--plum);
+    color: var(--rose-light);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .announcement-bar span { color: var(--gold-light); font-weight: 700; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(160deg, var(--plum) 0%, #6B3050 50%, #8B5570 100%);
+    padding: 70px 20px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(196,150,74,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: -60px;
+    width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(201,123,123,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-eyebrow {
+    display: inline-block;
+    background: rgba(232,165,152,0.2);
+    border: 1px solid rgba(232,165,152,0.4);
+    color: var(--rose-light);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 6vw, 58px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .hero-sub {
+    font-size: clamp(17px, 2.5vw, 22px);
+    color: rgba(255,255,255,0.78);
+    font-weight: 300;
+    margin: 20px auto 36px;
+    max-width: 620px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-sub strong {
+    color: var(--rose-light);
+    font-weight: 600;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-stat {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    padding: 10px 18px;
+    text-align: center;
+  }
+  .hero-stat .num {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gold-light);
+  }
+  .hero-stat .lbl {
+    font-size: 11px;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.5px;
+  }
+
+  /* ── BUTTONS ── */
+  .btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--gold) 0%, #E8A84A 100%);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 18px 44px;
+    border-radius: 50px;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    box-shadow: 0 8px 30px rgba(196,150,74,0.45);
+    transition: all 0.25s ease;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(196,150,74,0.55);
+  }
+  .btn-guarantee {
+    display: block;
+    font-size: 12px;
+    color: rgba(255,255,255,0.55);
+    margin-top: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  /* ── PAIN SECTION ── */
+  .pain-section {
+    background: var(--linen);
+    padding: 70px 20px;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .container-wide {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--plum-light);
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 4vw, 40px);
+    font-weight: 700;
+    color: var(--plum);
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .section-title em {
+    font-style: italic;
+    color: var(--rose);
+  }
+  .lead-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--soft);
+    margin-bottom: 24px;
+  }
+  .pain-list {
+    list-style: none;
+    margin: 30px 0;
+  }
+  .pain-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(74,45,58,0.08);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--body);
+  }
+  .pain-list li:last-child { border-bottom: none; }
+  .pain-icon {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    background: var(--blush);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+  .blame-shift {
+    background: linear-gradient(135deg, var(--plum) 0%, var(--plum-mid) 100%);
+    border-radius: 16px;
+    padding: 36px 40px;
+    margin: 36px 0;
+    color: #fff;
+  }
+  .blame-shift p {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(18px, 2.8vw, 26px);
+    font-style: italic;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.95);
+  }
+  .blame-shift p strong {
+    color: var(--gold-light);
+    font-style: normal;
+  }
+
+  /* ── SURGEON GENERAL ── */
+  .authority-bar {
+    background: var(--champagne);
+    border-left: 4px solid var(--gold);
+    padding: 20px 28px;
+    margin: 30px 0;
+    border-radius: 0 10px 10px 0;
+  }
+  .authority-bar p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--body);
+  }
+  .authority-bar strong { color: var(--plum); }
+
+  /* ── MECHANISM ── */
+  .mechanism-section {
+    background: var(--warm-white);
+    padding: 70px 20px;
+  }
+  .mechanism-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 36px;
+    box-shadow: 0 4px 30px rgba(74,45,58,0.06);
+    border: 1px solid rgba(74,45,58,0.06);
+    margin-bottom: 20px;
+  }
+  .mechanism-card .step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--sage-xl);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .mechanism-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--plum);
+    margin-bottom: 10px;
+  }
+  .mechanism-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--soft);
+  }
+  .mechanism-card .tag {
+    display: inline-block;
+    background: var(--sage-xl);
+    color: var(--sage);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  /* ── WHAT'S INSIDE ── */
+  .inside-section {
+    background: linear-gradient(160deg, #2D1F28 0%, var(--plum) 100%);
+    padding: 80px 20px;
+    color: #fff;
+  }
+  .inside-section .section-label { color: var(--rose-light); }
+  .inside-section .section-title { color: #fff; }
+  .inside-section .section-title em { color: var(--gold-light); }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .product-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 28px 28px 24px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.1);
+  }
+  .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--rose-light));
+  }
+  .product-card .emoji { font-size: 32px; margin-bottom: 14px; }
+  .product-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .product-card p {
+    font-size: 14px;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.65);
+  }
+  .product-card .value-tag {
+    display: inline-block;
+    background: rgba(196,150,74,0.2);
+    border: 1px solid rgba(196,150,74,0.35);
+    color: var(--gold-light);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .value-stack {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-top: 36px;
+  }
+  .value-stack .vs-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    font-size: 15px;
+  }
+  .value-stack .vs-row:last-child { border-bottom: none; }
+  .value-stack .vs-name { color: rgba(255,255,255,0.8); }
+  .value-stack .vs-price { color: var(--gold-light); font-weight: 700; }
+  .value-stack .vs-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 0;
+    margin-top: 8px;
+    border-top: 2px solid rgba(255,255,255,0.15);
+  }
+  .value-stack .vs-total .vs-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+  }
+  .value-stack .vs-total .vs-price {
+    font-size: 18px;
+  }
+  .value-stack .vs-you {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+  }
+  .value-stack .vs-you .vs-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--gold-light);
+  }
+  .value-stack .vs-you .vs-price-big {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gold-light);
+  }
+
+  /* ── SOCIAL PROOF ── */
+  .proof-section {
+    background: var(--linen);
+    padding: 70px 20px;
+  }
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 36px;
+  }
+  .testimonial-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 2px 20px rgba(74,45,58,0.06);
+    border: 1px solid rgba(74,45,58,0.06);
+    position: relative;
+  }
+  .testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: 16px; right: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: var(--sage-xl);
+    line-height: 1;
+  }
+  .stars {
+    color: var(--gold);
+    font-size: 16px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+  }
+  .testimonial-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--body);
+    font-style: italic;
+    margin-bottom: 18px;
+  }
+  .testimonial-card p strong { font-style: normal; color: var(--plum); }
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .author-avatar {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--rose-light), var(--plum-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .author-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--plum);
+  }
+  .author-meta {
+    font-size: 12px;
+    color: var(--soft);
+  }
+  .featured-testimonial {
+    background: linear-gradient(135deg, var(--plum) 0%, var(--plum-mid) 100%);
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 30px;
+    color: #fff;
+    position: relative;
+  }
+  .featured-testimonial p {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(18px, 2.5vw, 24px);
+    font-style: italic;
+    line-height: 1.55;
+    color: rgba(255,255,255,0.95);
+    margin-bottom: 20px;
+  }
+  .featured-testimonial p strong {
+    color: var(--gold-light);
+    font-style: normal;
+  }
+  .featured-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .featured-author .avatar-lg {
+    width: 44px; height: 44px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; color: #fff; font-weight: 700;
+  }
+  .featured-author .name { font-weight: 700; font-size: 15px; color: #fff; }
+  .featured-author .meta { font-size: 12px; color: rgba(255,255,255,0.6); }
+
+  /* ── FOR WHO ── */
+  .forwho-section {
+    background: var(--warm-white);
+    padding: 70px 20px;
+  }
+  .checklist {
+    margin: 28px 0;
+  }
+  .checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--body);
+    border-bottom: 1px solid rgba(74,45,58,0.06);
+  }
+  .checklist-item:last-child { border-bottom: none; }
+  .check-icon {
+    flex-shrink: 0;
+    width: 24px; height: 24px;
+    background: var(--sage);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; color: #fff;
+    margin-top: 2px;
+  }
+  .x-icon {
+    background: var(--rose);
+  }
+
+  /* ── OFFER / CTA ── */
+  .offer-section {
+    background: linear-gradient(160deg, var(--champagne) 0%, var(--linen) 100%);
+    padding: 80px 20px;
+  }
+  .offer-box {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(74,45,58,0.12);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .offer-header {
+    background: linear-gradient(135deg, var(--plum) 0%, var(--plum-mid) 100%);
+    padding: 36px 40px;
+    text-align: center;
+    color: #fff;
+  }
+  .offer-header .eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--rose-light);
+    margin-bottom: 12px;
+  }
+  .offer-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 4vw, 34px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .offer-header p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+  }
+  .offer-body {
+    padding: 36px 40px;
+  }
+  .offer-items {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  .offer-items li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 15px;
+    color: var(--body);
+    border-bottom: 1px solid rgba(74,45,58,0.06);
+  }
+  .offer-items li:last-child { border-bottom: none; }
+  .offer-items .oi-check {
+    flex-shrink: 0;
+    color: var(--sage);
+    font-size: 16px;
+    margin-top: 1px;
+  }
+  .offer-items .oi-name { flex: 1; font-weight: 500; }
+  .offer-items .oi-val {
+    color: var(--soft);
+    font-size: 13px;
+    text-decoration: line-through;
+    flex-shrink: 0;
+  }
+  .price-block {
+    background: var(--champagne);
+    border-radius: 14px;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .price-block .was {
+    font-size: 15px;
+    color: var(--soft);
+    text-decoration: line-through;
+    margin-bottom: 4px;
+  }
+  .price-block .now-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--plum);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .price-block .price {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 900;
+    color: var(--plum);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .price-block .price-sub {
+    font-size: 13px;
+    color: var(--soft);
+  }
+  .urgency-bar {
+    background: linear-gradient(90deg, rgba(201,123,123,0.15), rgba(201,123,123,0.08));
+    border: 1px solid rgba(201,123,123,0.25);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: var(--plum);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .urgency-bar strong { color: var(--rose); }
+  .guarantee-box {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--sage-xl);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .guarantee-icon { font-size: 32px; flex-shrink: 0; }
+  .guarantee-box h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--plum);
+    margin-bottom: 6px;
+  }
+  .guarantee-box p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--soft);
+  }
+
+  /* ── OBJECTION HANDLING ── */
+  .faq-section {
+    background: var(--linen);
+    padding: 70px 20px;
+  }
+  .faq-item {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(74,45,58,0.04);
+  }
+  .faq-question {
+    padding: 20px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--plum);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .faq-question::after {
+    content: '+';
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--plum-light);
+    flex-shrink: 0;
+    transition: transform 0.25s;
+  }
+  .faq-item.open .faq-question::after {
+    transform: rotate(45deg);
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--soft);
+    padding: 0 24px;
+  }
+  .faq-item.open .faq-answer {
+    max-height: 400px;
+    padding: 0 24px 20px;
+  }
+
+  /* ── FINAL CTA ── */
+  .final-cta {
+    background: linear-gradient(160deg, var(--plum) 0%, #6B3050 100%);
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  .final-cta .section-label { color: var(--rose-light); }
+  .final-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .final-cta h2 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .final-cta p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+    max-width: 500px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #1A0E14;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  footer p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    line-height: 1.8;
+  }
+  footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(74,45,58,0.15), transparent);
+    margin: 0;
+  }
+
+  /* ── STICKY MOBILE CTA ── */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--plum);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  .sticky-cta.visible { transform: translateY(0); }
+  .sticky-cta-text {
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .sticky-cta-text strong { color: #fff; font-size: 15px; display: block; }
+  .sticky-cta .btn-sm {
+    background: linear-gradient(135deg, var(--gold), #E8A84A);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .animate-up {
+    animation: fadeUp 0.7s ease forwards;
+  }
+  .delay-1 { animation-delay: 0.1s; opacity: 0; }
+  .delay-2 { animation-delay: 0.25s; opacity: 0; }
+  .delay-3 { animation-delay: 0.4s; opacity: 0; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .hero { padding: 50px 20px 60px; }
+    .hero-stats { gap: 8px; }
+    .hero-stat { padding: 8px 14px; }
+    .hero-stat .num { font-size: 20px; }
+    .blame-shift { padding: 28px 24px; }
+    .offer-body { padding: 28px 24px; }
+    .offer-header { padding: 28px 24px; }
+    .price-block .price { font-size: 44px; }
+    .product-grid { grid-template-columns: 1fr; }
+    .testimonial-grid { grid-template-columns: 1fr; }
+    .value-stack { padding: 20px; }
+  }
+
+  /* ── TRUST BADGES ── */
+  .trust-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 28px 20px;
+    background: var(--champagne);
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--plum-mid);
+    font-weight: 500;
+  }
+  .trust-item span { font-size: 18px; }
+
+  /* ── COMPARISON TABLE ── */
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 15px;
+  }
+  .compare-table th {
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .compare-table th:first-child { background: transparent; }
+  .compare-table th.col-them {
+    background: rgba(74,45,58,0.06);
+    color: var(--soft);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+  .compare-table th.col-us {
+    background: var(--plum);
+    color: var(--gold-light);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+  .compare-table td {
+    padding: 13px 18px;
+    border-bottom: 1px solid rgba(74,45,58,0.06);
+    color: var(--body);
+  }
+  .compare-table td:first-child { font-weight: 500; }
+  .compare-table td.col-them {
+    background: rgba(74,45,58,0.03);
+    text-align: center;
+    color: var(--soft);
+    font-size: 18px;
+  }
+  .compare-table td.col-us {
+    background: rgba(74,45,58,0.04);
+    text-align: center;
+    font-size: 18px;
+    color: var(--sage);
+    font-weight: 700;
+  }
+  .compare-table tr:last-child td { border-bottom: none; }
+
+  /* ── MEDIA SLOTS ── */
+  .media-slot {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 28px 0;
+    background: linear-gradient(135deg, var(--champagne) 0%, var(--blush) 100%);
+    border: 2px dashed rgba(74,45,58,0.18);
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .media-slot.media-hero-video {
+    min-height: 340px;
+    margin: 32px 0 20px;
+    background: linear-gradient(135deg, rgba(74,45,58,0.08) 0%, rgba(201,123,123,0.1) 100%);
+    border-color: rgba(201,123,123,0.3);
+  }
+  .media-slot.media-dark {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.2);
+  }
+  .media-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0; left: 0;
+    border-radius: 14px;
+  }
+  .media-slot video,
+  .media-slot iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    border: none;
+    border-radius: 14px;
+  }
+  /* Placeholder shown only when no media is inside */
+  .media-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 40px 24px;
+    text-align: center;
+    pointer-events: none;
+  }
+  .media-placeholder .mp-icon {
+    font-size: 42px;
+    opacity: 0.5;
+  }
+  .media-placeholder .mp-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--plum-mid);
+    letter-spacing: 0.5px;
+  }
+  .media-placeholder .mp-desc {
+    font-size: 12px;
+    color: var(--soft);
+    max-width: 320px;
+    line-height: 1.5;
+  }
+  .media-placeholder .mp-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--plum-light);
+    background: rgba(74,45,58,0.08);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+  /* 2-column media layout */
+  .media-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 28px 0;
+  }
+  .media-2col .media-slot { margin: 0; min-height: 200px; }
+  @media (max-width: 600px) {
+    .media-2col { grid-template-columns: 1fr; }
+    .media-slot.media-hero-video { min-height: 220px; }
+  }
+  /* Video play button overlay */
+  .play-overlay {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px; height: 64px;
+    background: rgba(74,45,58,0.75);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+    border: 2px solid rgba(255,255,255,0.3);
+  }
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  🕐 Launch Price: <span>$47</span> — Regular price $67. This offer ends soon.
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow animate-up">For Overwhelmed Moms Everywhere</div>
+    <h1 class="animate-up delay-1">
+      Your Brain Was Never Designed<br>
+      to Hold <em>All of This</em>
+    </h1>
+    <p class="hero-sub animate-up delay-2">
+      47 copy-paste AI prompts + a complete Family Operating System that moves the mental load
+      <strong>out of your head</strong> and into a system that actually works.
+    </p>
+    <div class="hero-stats animate-up delay-3">
+      <div class="hero-stat">
+        <span class="num">47</span>
+        <span class="lbl">Copy-Paste Prompts</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">5 min</span>
+        <span class="lbl">To Feel the Difference</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">$47</span>
+        <span class="lbl">One-Time Only</span>
+      </div>
+    </div>
+    <a href="#offer" class="btn-primary animate-up delay-3">
+      Yes — Give Me My Brain Back →
+    </a>
+    <span class="btn-guarantee">30-day money-back guarantee · Instant digital download</span>
+
+    <!-- ═══════════════════════════════════════════════════
+         MEDIA SLOT 1 — HERO VIDEO
+         WHAT TO PUT HERE: Your 60–90 sec "talking head" intro video.
+         You speaking directly to moms: "I know you're exhausted..."
+         Warm, personal, shot on phone or ring light is fine.
+         Alternatively: A short emotional B-roll loop (mom at desk at night,
+         coffee getting cold, hands on keyboard, kids asleep).
+         HOW TO EMBED: Replace the placeholder div below with either:
+         <video autoplay muted loop playsinline><source src="YOUR_VIDEO.mp4"></video>
+         OR for Stan Store: paste their embed code / hosted video URL here.
+         DIMENSIONS: 16:9 landscape · min 720p
+    ════════════════════════════════════════════════════ -->
+    <div class="media-slot media-hero-video animate-up delay-3" style="max-width:580px; margin:36px auto 0;">
+      <div class="media-placeholder">
+        <div class="mp-icon">🎥</div>
+        <div class="mp-tag">Media Slot 1 — Hero Video</div>
+        <div class="mp-title">Your Personal Intro Video</div>
+        <div class="mp-desc">60–90 sec. You talking directly to moms. Warm, honest, personal. "I know it's 11pm and you're still on..." Start with the pain they already feel.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST BADGES -->
+<div class="trust-row">
+  <div class="trust-item"><span>🔒</span> Secure Checkout</div>
+  <div class="trust-item"><span>⚡</span> Instant Download</div>
+  <div class="trust-item"><span>✅</span> 30-Day Guarantee</div>
+  <div class="trust-item"><span>💜</span> Built by a Mom, for Moms</div>
+</div>
+
+<!-- PAIN SECTION -->
+<section class="pain-section">
+  <div class="container">
+    <div class="section-label">You Already Know This Feeling</div>
+    <h2 class="section-title">It's 11pm. Your kids are asleep.<br><em>Your brain is not.</em></h2>
+    <p class="lead-text">
+      You're scheduling dentist appointments in your head. Replaying the school email you haven't answered. 
+      Mentally rewriting tomorrow before today is even over.
+    </p>
+    <p class="lead-text">
+      You've been told to "just relax." To "ask for help." To practice self-care.
+      And you've tried — but <strong>none of it works</strong> because it doesn't address what's actually happening.
+    </p>
+
+    <ul class="pain-list">
+      <li>
+        <div class="pain-icon">😶</div>
+        You sit down to rest and within 2 minutes you're mentally running the grocery list, the permission slip, and the thing you said to your kid at dinner.
+      </li>
+      <li>
+        <div class="pain-icon">🌙</div>
+        You wake up at 2am — not from a nightmare, but from a to-do list performing itself at full volume.
+      </li>
+      <li>
+        <div class="pain-icon">🔄</div>
+        Your husband does his fair share of the tasks. You still carry 80% of the thinking, the anticipating, the remembering. Every. Single. Day.
+      </li>
+      <li>
+        <div class="pain-icon">🍽️</div>
+        The 5pm "what's for dinner" question hits like a wall. You're exhausted, the kids are melting down, and you have to invent a meal from nothing — again.
+      </li>
+      <li>
+        <div class="pain-icon">😔</div>
+        Sunday evenings feel like Monday anxiety starting early. The weekend doesn't really end — it just converts into dread.
+      </li>
+      <li>
+        <div class="pain-icon">🥹</div>
+        Your kid said "Mom, you seem distracted lately." And you cried about it later because you knew it was true.
+      </li>
+    </ul>
+
+    <div class="authority-bar">
+      <p>In August 2024, the US Surgeon General issued an official advisory declaring maternal mental health a <strong>national public health crisis</strong> — specifically naming invisible labor, decision fatigue, and the mental load as structural problems that were <strong>never designed to be carried by one person.</strong></p>
+    </div>
+
+    <!-- MEDIA SLOT 2 — EMOTIONAL PAIN IMAGE
+         WHAT: A single powerful image that captures the 11pm feeling.
+         · Mom at kitchen table at night, phone in hand, eyes tired
+         · Dark bedroom, glow of a phone screen, clock showing 2am
+         · Cinematic AI image (Kie.ai prompt): "exhausted mom at kitchen table
+           late at night, warm lamp light, coffee mug, cinematic, emotional, photorealistic"
+         HOW TO USE: Replace the .media-slot div with: <img src="YOUR-IMAGE.jpg" alt="...">
+         STAN STORE: Upload image to your media library, copy URL, paste into src=""
+         DIMENSIONS: 16:9 or 4:5 · min 800px wide
+    -->
+    <div class="media-slot" style="min-height:300px; margin:28px 0;">
+      <div class="media-placeholder">
+        <div class="mp-icon">📸</div>
+        <div class="mp-tag">Media Slot 2 · Pain Moment Image</div>
+        <div class="mp-title">The 11pm Feeling</div>
+        <div class="mp-desc">Warm, cinematic image of a mom at night. Tired but still going. This is the moment your reader recognizes herself. Real or AI-generated via Kie.ai.</div>
+      </div>
+    </div>
+
+    <div class="blame-shift">
+      <p>
+        You are not failing. You are not bad at this.
+        You are one person carrying the cognitive weight of an entire household —
+        and the system was <strong>never built to support you.</strong>
+        <br><br>
+        The fix isn't trying harder.
+        It's building the infrastructure that was always missing.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- MECHANISM SECTION -->
+<section class="mechanism-section">
+  <div class="container">
+    <div class="section-label">The Real Problem — And the Real Fix</div>
+    <h2 class="section-title">Your brain isn't broken.<br><em>It's overloaded.</em></h2>
+    <p class="lead-text">
+      The human brain was never designed to hold thousands of open tasks AND be fully present at the same time.
+      When your working memory is at 100% capacity all day, every day — it's not mom brain. It's overflow.
+    </p>
+    <p class="lead-text">
+      The answer isn't mindset work or bubble baths. It's giving that overflow somewhere to go.
+    </p>
+
+    <div class="mechanism-card" style="margin-top:36px">
+      <div class="step-num">01</div>
+      <span class="tag">The Problem</span>
+      <h3>You're the family's only hard drive</h3>
+      <p>Meals, schedules, school admin, doctor questions, permission slips, gift research, the conversation you need to have with your partner — all of it lives exclusively in your head. The moment you stop running it, it all stops. That's not a character flaw. That's an infrastructure problem.</p>
+    </div>
+
+    <div class="mechanism-card">
+      <div class="step-num">02</div>
+      <span class="tag">The Root Cause</span>
+      <h3>Open loops prevent rest — neurologically</h3>
+      <p>Your brain can't shut down until it believes everything important is handled. That's why you can't relax even when you have time. Telling yourself to "just stop thinking" doesn't close the loops. Writing them down — into a system — does. This is why the dump works.</p>
+    </div>
+
+    <div class="mechanism-card">
+      <div class="step-num">03</div>
+      <span class="tag">The Solution</span>
+      <h3>AI as your invisible second hand</h3>
+      <p>ChatGPT becomes the external hard drive your brain has been desperately looking for. Not because it's magic — because it's a place to put the lists, the plans, the decisions, the 3am worry spirals. When those things live in a system instead of your head, your brain finally has permission to stop running them. That's the whole shift.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA SLOT 3 — BEFORE/AFTER TRANSFORMATION VIDEO
+     WHAT: Short 30–60 sec "demo" video or screen recording showing ChatGPT in action.
+     · You copy-pasting a prompt and showing the result appearing in seconds
+     · Show the Sunday Reset prompt → the clean plan it generates
+     · Or: a 2-split image (before: chaotic notes app / after: clean AI plan)
+     HOW TO USE: Replace with <video> tag or embed iframe from YouTube/Vimeo
+     DIMENSIONS: 16:9 · This is a curiosity/proof moment — show the mechanism working
+-->
+<div class="mechanism-section" style="padding:0 20px 60px;">
+  <div class="container">
+    <div class="media-slot" style="min-height:320px;">
+      <div class="media-placeholder">
+        <div class="mp-icon">▶️</div>
+        <div class="mp-tag">Media Slot 3 · Demo / Screen Recording</div>
+        <div class="mp-title">See It Work in 60 Seconds</div>
+        <div class="mp-desc">Show the Sunday Reset prompt in action. Copy → paste → clean weekly plan appears. This closes the skeptic who thinks "AI won't work for me." Real screen recording on phone works perfectly.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INSIDE THE SYSTEM -->
+<section class="inside-section">
+  <div class="container-wide">
+    <div class="section-label">What You Get</div>
+    <h2 class="section-title">Everything your brain has been<br><em>trying to hold alone</em></h2>
+    <p style="color:rgba(255,255,255,0.65); font-size:16px; max-width:560px; margin-top:12px; line-height:1.7;">
+      The Mom Brain Reset System is five tools built for exactly the moments that drain you most. Everything is copy-paste ready. Nothing to figure out.
+    </p>
+
+    <!-- MEDIA SLOT 4 — PRODUCT MOCKUP IMAGE
+         WHAT: A flat-lay or device mockup showing the PDFs.
+         · 5 PDFs displayed as iPad/iPhone screens or printed pages on a desk
+         · Warm linen background, coffee mug, candle — aspirational but real
+         · Use Canva (free) or Placeit.net for PDF mockup templates
+         · Best angle: 3/4 top-down view, warm lighting, styled like a morning desk
+         HOW TO USE: Replace with <img src="YOUR-MOCKUP.jpg" alt="Mom Brain Reset System contents">
+         DIMENSIONS: 16:9 landscape · min 900px wide
+    -->
+    <div class="media-slot media-dark" style="min-height:280px; margin: 0 0 32px;">
+      <div class="media-placeholder">
+        <div class="mp-icon">🗂️</div>
+        <div class="mp-tag">Media Slot 4 · Product Mockup</div>
+        <div class="mp-title">The Full System — What It Looks Like</div>
+        <div class="mp-desc">Flat-lay of all 5 PDFs displayed on iPad or printed pages. Warm desk styling: linen, candle, coffee. Create in Canva → Mockup Generator. This makes it feel real and tangible.</div>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="emoji">🧠</div>
+        <div class="value-tag">PDF 1 · Value $47</div>
+        <h3>47 Copy-Paste AI Prompts</h3>
+        <p>Every prompt built for a specific mom moment: meal planning, school admin, Sunday spiral, 2am anxiety, partner conversations, bedtime chaos, energy audit. Copy. Paste. Done.</p>
+      </div>
+      <div class="product-card">
+        <div class="emoji">🏠</div>
+        <div class="value-tag">PDF 2 · Value $39</div>
+        <h3>The Family Operating System</h3>
+        <p>8 chapters with printable templates. Meals, calendar, routines, delegation, finances, parenting admin, energy management. The infrastructure your household was missing.</p>
+      </div>
+      <div class="product-card">
+        <div class="emoji">🌿</div>
+        <div class="value-tag">PDF 3 · Value $27</div>
+        <h3>The 7-Day Mental Load Detox</h3>
+        <p>15 minutes a day for one week. By Day 3, your head will feel different. A structured challenge that builds the system into your actual life, not just another PDF you read once.</p>
+      </div>
+      <div class="product-card">
+        <div class="emoji">🍳</div>
+        <div class="value-tag">Bonus 1 · Value $19</div>
+        <h3>The Dinner Eliminator</h3>
+        <p>One 20-minute setup creates a permanent 4-week meal rotation — 28 dinners decided forever. Never answer "what's for dinner" from scratch again.</p>
+      </div>
+      <div class="product-card">
+        <div class="emoji">📱</div>
+        <div class="value-tag">Bonus 2 · Value $17</div>
+        <h3>The Connected Mom Guide</h3>
+        <p>How to wire ChatGPT into your phone, calendar, and daily life. Siri shortcuts, Google Calendar automation, grocery list apps, and the Sunday Reset sequence — all set up once, working forever.</p>
+      </div>
+    </div>
+
+    <div class="value-stack">
+      <div class="vs-row"><span class="vs-name">47 Copy-Paste Prompts</span><span class="vs-price">$47</span></div>
+      <div class="vs-row"><span class="vs-name">Family Operating System (8 chapters + templates)</span><span class="vs-price">$39</span></div>
+      <div class="vs-row"><span class="vs-name">7-Day Mental Load Detox</span><span class="vs-price">$27</span></div>
+      <div class="vs-row"><span class="vs-name">The Dinner Eliminator</span><span class="vs-price">$19</span></div>
+      <div class="vs-row"><span class="vs-name">Connected Mom Setup Guide</span><span class="vs-price">$17</span></div>
+      <div class="vs-total">
+        <span class="vs-name">Total Value</span>
+        <span class="vs-price">$149</span>
+      </div>
+      <div class="vs-you" style="padding-top:12px; border-top: 2px solid rgba(196,150,74,0.3); margin-top:4px;">
+        <span class="vs-name" style="color:var(--gold-light); font-size:17px;">You Pay Today</span>
+        <span class="vs-price-big">$47</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="proof-section">
+  <div class="container-wide">
+    <div class="section-label">Real Moms. Real Results.</div>
+    <h2 class="section-title">What changes when your brain<br><em>finally has somewhere to put it</em></h2>
+
+    <!-- MEDIA SLOT 5 — TESTIMONIAL VIDEO OR IMAGE
+         WHAT: The most powerful slot on the page. Options:
+         OPTION A (best): A 20–30 sec video testimonial from a real mom.
+           She says one specific thing that changed. No script needed — just "what was different."
+         OPTION B: A photo of the mom who said the quote below + her real first name.
+           Real faces with real names convert 3x better than anonymous quotes.
+         OPTION C: A screen recording of a real DM / comment from TikTok where someone
+           described their transformation. Blur the username if needed.
+         HOW TO USE: <video controls poster="thumbnail.jpg"><source src="..."></video>
+         Or: <img src="real-mom-photo.jpg" style="border-radius:12px; width:100%;">
+         DIMENSIONS: 9:16 vertical for video · square or 4:5 for image
+    -->
+    <div class="media-2col" style="margin-bottom:28px;">
+      <div class="media-slot" style="min-height:220px;">
+        <div class="media-placeholder">
+          <div class="mp-icon">🎬</div>
+          <div class="mp-tag">Media Slot 5a · Video Testimonial</div>
+          <div class="mp-title">Real Mom, 20–30 Sec</div>
+          <div class="mp-desc">One specific thing that changed. No script. Just honest. This is the single highest-converting element on any sales page.</div>
+        </div>
+      </div>
+      <div class="media-slot" style="min-height:220px;">
+        <div class="media-placeholder">
+          <div class="mp-icon">💬</div>
+          <div class="mp-tag">Media Slot 5b · Screenshot / DM</div>
+          <div class="mp-title">Real TikTok Comment or DM</div>
+          <div class="mp-desc">A screenshot of someone saying "this actually worked." Blur name if needed. Real social proof beats written testimonials every time.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured-testimonial">
+      <p>"I was physically present for most of her childhood. At the table, at pickups, at bedtime. But I was mentally somewhere else — running the lists, holding the schedule, working through tomorrow. My 8-year-old said <strong>'Mom, you seem actually here lately.'</strong> I cried in the kitchen. That's what this system did for me."</p>
+      <div class="featured-author">
+        <div class="avatar-lg">J</div>
+        <div>
+          <div class="name">Jessica M.</div>
+          <div class="meta">Mom of 2 · Chicago, IL</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Sunday evenings used to be when Monday dread started. Now I do the 5-minute Sunday Reset and <strong>the evening actually feels like evening.</strong> I didn't think something that small could change that much."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">S</div>
+          <div>
+            <div class="author-name">Sarah K.</div>
+            <div class="author-meta">Mom of 3 · Austin, TX</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"I haven't planned a meal from scratch since I set up the 4-week rotation. <strong>That one thing alone</strong> eliminated a decision I was making every single day. My husband noticed before I did."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">M</div>
+          <div>
+            <div class="author-name">Michelle T.</div>
+            <div class="author-meta">Mom of 1 · Seattle, WA</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"I was sick for 4 days and the house kept running. The kids' schedules were documented. The meals were planned. My husband could actually execute without me managing every step. <strong>I didn't think that was possible.</strong>"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">A</div>
+          <div>
+            <div class="author-name">Amanda R.</div>
+            <div class="author-meta">Mom of 2 · Denver, CO</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"I used to do a 5-minute brain dump at 2am and my brain finally let go. <strong>I haven't had a sleepless spiral in 3 weeks.</strong> That's the longest stretch in years. I thought I was just an anxious person."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">L</div>
+          <div>
+            <div class="author-name">Lauren B.</div>
+            <div class="author-meta">Mom of 1 · Nashville, TN</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"The partner conversation prompt helped me say what I'd been trying to say for 2 years. Not accusatory. Just honest. <strong>One 20-minute conversation changed the whole dynamic</strong> of how we handle the mental load."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">R</div>
+          <div>
+            <div class="author-name">Rachel P.</div>
+            <div class="author-meta">Mom of 2 · Portland, OR</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"I bought it at 11pm on a Tuesday because I was spiraling. Used Prompt 1 that night. <strong>Slept through for the first time in months.</strong> Worth every cent of $47, and I was skeptical of digital products before this."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">K</div>
+          <div>
+            <div class="author-name">Kate W.</div>
+            <div class="author-meta">Mom of 3 · Boston, MA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="mechanism-section" style="padding:60px 20px;">
+  <div class="container">
+    <div class="section-label">Why This Works</div>
+    <h2 class="section-title">Not another thing to read.<br><em>Something that actually runs.</em></h2>
+    <p class="lead-text">Every mom has tried the planner, the routine, the productivity app. Here's why those don't stick — and why this does.</p>
+
+    <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-them">Planners & Apps</th>
+            <th class="col-us">Mom Brain Reset</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Works without setup every day</td>
+            <td class="col-them">✗</td>
+            <td class="col-us">✓</td>
+          </tr>
+          <tr>
+            <td>Adapted to your specific family</td>
+            <td class="col-them">✗</td>
+            <td class="col-us">✓</td>
+          </tr>
+          <tr>
+            <td>Handles 2am anxiety spirals</td>
+            <td class="col-them">✗</td>
+            <td class="col-us">✓</td>
+          </tr>
+          <tr>
+            <td>Eliminates meal planning decisions</td>
+            <td class="col-them">✗</td>
+            <td class="col-us">✓</td>
+          </tr>
+          <tr>
+            <td>Helps with partner communication</td>
+            <td class="col-them">✗</td>
+            <td class="col-us">✓</td>
+          </tr>
+          <tr>
+            <td>Improves actual presence with kids</td>
+            <td class="col-them">✗</td>
+            <td class="col-us">✓</td>
+          </tr>
+          <tr>
+            <td>One-time cost, no subscription</td>
+            <td class="col-them">✗</td>
+            <td class="col-us">✓</td>
+          </tr>
+          <tr>
+            <td>Works in under 5 minutes</td>
+            <td class="col-them">✗</td>
+            <td class="col-us">✓</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FOR WHO -->
+<section class="forwho-section">
+  <div class="container">
+    <div class="section-label">Is This For You?</div>
+    <h2 class="section-title">This is for you <em>if</em>...</h2>
+    <div class="checklist">
+      <div class="checklist-item">
+        <div class="check-icon">✓</div>
+        You can't fully relax even when you finally have a moment to yourself
+      </div>
+      <div class="checklist-item">
+        <div class="check-icon">✓</div>
+        You've cried in the bathroom because you couldn't keep up with your own life
+      </div>
+      <div class="checklist-item">
+        <div class="check-icon">✓</div>
+        Your partner "helps" but you're still the one who holds everything
+      </div>
+      <div class="checklist-item">
+        <div class="check-icon">✓</div>
+        Sunday evenings fill you with dread instead of rest
+      </div>
+      <div class="checklist-item">
+        <div class="check-icon">✓</div>
+        You know ChatGPT exists but haven't connected it to your actual daily life
+      </div>
+      <div class="checklist-item">
+        <div class="check-icon">✓</div>
+        You've tried planners, apps, and routines — they worked for 2 weeks, then didn't
+      </div>
+    </div>
+
+    <h2 class="section-title" style="margin-top:50px;">This is <em>not</em> for you if...</h2>
+    <div class="checklist">
+      <div class="checklist-item">
+        <div class="check-icon x-icon">✗</div>
+        You want someone to do everything for you with zero effort on your part
+      </div>
+      <div class="checklist-item">
+        <div class="check-icon x-icon">✗</div>
+        You're not willing to spend 5–15 minutes once to set up a system that lasts forever
+      </div>
+      <div class="checklist-item">
+        <div class="check-icon x-icon">✗</div>
+        You don't have access to ChatGPT (it's free at chat.openai.com)
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER / CTA -->
+<section class="offer-section" id="offer">
+  <div class="container">
+    <div class="section-label" style="text-align:center;">Get Instant Access</div>
+    <h2 class="section-title" style="text-align:center; margin-bottom:36px;">Ready to give your brain <em>somewhere to rest?</em></h2>
+
+    <div class="offer-box">
+      <div class="offer-header">
+        <div class="eyebrow">The Complete Bundle</div>
+        <h2>The Mom Brain Reset System</h2>
+        <p>Everything you need. Instant download. No subscription, ever.</p>
+      </div>
+      <div class="offer-body">
+        <ul class="offer-items">
+          <li>
+            <span class="oi-check">✓</span>
+            <span class="oi-name">47 Copy-Paste AI Prompts (5 categories)</span>
+            <span class="oi-val">$47</span>
+          </li>
+          <li>
+            <span class="oi-check">✓</span>
+            <span class="oi-name">8-Chapter Family Operating System + printable templates</span>
+            <span class="oi-val">$39</span>
+          </li>
+          <li>
+            <span class="oi-check">✓</span>
+            <span class="oi-name">7-Day Mental Load Detox Challenge (15 min/day)</span>
+            <span class="oi-val">$27</span>
+          </li>
+          <li>
+            <span class="oi-check">✓</span>
+            <span class="oi-name">The 4-Week Dinner Eliminator</span>
+            <span class="oi-val">$19</span>
+          </li>
+          <li>
+            <span class="oi-check">✓</span>
+            <span class="oi-name">The Connected Mom Setup Guide</span>
+            <span class="oi-val">$17</span>
+          </li>
+        </ul>
+
+        <div class="urgency-bar">
+          🕐 Launch price ends soon — after this it goes to <strong>$67</strong>
+        </div>
+
+        <div class="price-block">
+          <div class="was">Total Value: $149</div>
+          <div class="now-label">Today Only</div>
+          <div class="price">$47</div>
+          <div class="price-sub">One-time payment · Instant download · Yours forever</div>
+        </div>
+
+        <!-- MEDIA SLOT 6 — PRODUCT UNBOXING / WHAT YOU RECEIVE
+             WHAT: A short animated GIF or static image showing what the download looks like.
+             · Animated: PDF files appearing one by one with a checkmark animation
+             · Static: Screenshot of the download folder with all 5 PDF files named
+             · Or: Screen recording of opening one of the PDFs — shows it's real, not vague
+             HOW TO USE: <img src="download-preview.gif" alt="What you receive" style="border-radius:10px; width:100%; margin-bottom:16px;">
+             DIMENSIONS: Any · keep under 2MB for load speed
+        -->
+        <div class="media-slot" style="min-height:160px; margin-bottom:20px; background:var(--champagne); border-color:rgba(74,45,58,0.12);">
+          <div class="media-placeholder">
+            <div class="mp-icon">📥</div>
+            <div class="mp-tag">Media Slot 6 · Download Preview</div>
+            <div class="mp-title">What You Receive Instantly</div>
+            <div class="mp-desc">Screenshot or GIF of the download. Makes it feel real. Optional: open one PDF to show inside.</div>
+          </div>
+        </div>
+
+        <a href="YOUR_STAN_STORE_LINK" class="btn-primary" style="width:100%; text-align:center; display:block; font-size:18px; padding:20px;">
+          Get Instant Access for $47 →
+        </a>
+
+        <div class="guarantee-box" style="margin-top:24px;">
+          <div class="guarantee-icon">🛡️</div>
+          <div>
+            <h4>30-Day Money-Back Guarantee</h4>
+            <p>Use it for 30 days. If you don't feel a real difference in how your brain handles the week, email us and we'll refund every cent. No questions asked. You have nothing to lose — and a quieter mind to gain.</p>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:20px; font-size:13px; color:var(--soft);">
+          🔒 Secure payment · 📥 Instant PDF download · 💳 All major cards accepted
+        </div>
+      </div>
+    </div>
+
+    <!-- VALUE REFRAME -->
+    <div style="max-width:640px; margin:48px auto 0; text-align:center;">
+      <p style="font-size:15px; color:var(--soft); line-height:1.8;">
+        A therapy session: $150 minimum.<br>
+        A meal planning service: $100/month.<br>
+        A family organizer app: $50/year.<br>
+        A productivity coach: $200/hour.<br><br>
+        <strong style="color:var(--plum); font-size:17px;">You're carrying the equivalent of all of these — every single day — for free.</strong><br><br>
+        The Mom Brain Reset System is $47. One time. Yours forever.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-label">Questions</div>
+    <h2 class="section-title" style="margin-bottom:32px;">Everything you're wondering</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">Do I need to be tech-savvy to use this?</div>
+      <div class="faq-answer">Not at all. If you can copy and paste text, you can use every single prompt in this system. ChatGPT is free at chat.openai.com — no account setup needed to start. The Connected Mom Guide walks you through everything step by step.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What exactly is AI / ChatGPT doing here?</div>
+      <div class="faq-answer">ChatGPT is a free tool at chat.openai.com that you can type or paste anything into — and it responds like a very smart assistant. In this system, it becomes your external brain: it holds your lists, builds your meal plans, writes your schedules, helps you prep for appointments, and closes the mental loops that keep you up at night. The prompts tell it exactly what to do for each situation. You don't have to figure out what to say — the prompts do that for you.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">I've tried planners and productivity systems before. Why would this be different?</div>
+      <div class="faq-answer">Planners put more work on your plate. You have to fill them in, maintain them, and remember to check them. This system is the opposite — you put information in once and the AI holds it for you. It doesn't require daily maintenance. The key difference is that it works with your actual brain instead of against it. You're not adding a new habit. You're building an infrastructure that runs in the background.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How much time does this actually take?</div>
+      <div class="faq-answer">The daily prompts take under 5 minutes. The biggest time investment is the one-time setup — the meal rotation takes about 20 minutes once, and the Family Operating System takes one Sunday afternoon. After that, the system runs itself. Most moms report getting back significantly more time than they invested within the first week.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Is this really just $47?</div>
+      <div class="faq-answer">Yes — this is the launch price and it's the real price. After launch it goes to $67. No upsells after purchase, no subscription, no hidden anything. You pay $47 once and own everything forever, including any updates.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What if it doesn't work for me?</div>
+      <div class="faq-answer">You're covered by a 30-day money-back guarantee. Use the system for 30 days. If you don't feel a genuine difference in how your week runs and how your brain handles the load, email us for a full refund. No questions asked, no hoops to jump through.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Does my husband/partner need to be involved?</div>
+      <div class="faq-answer">No — but there's a section specifically for the partner dynamic. The system works with or without partner involvement. Many moms start solo and find that once the infrastructure is in place, delegation naturally becomes easier because everything is documented and clear rather than living only in your head.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <!-- MEDIA SLOT 7 — EMOTIONAL CLOSING IMAGE
+         WHAT: The "after" image. The emotional payoff. The mom you want her to become.
+         · A mom on the couch, kids next to her, genuinely relaxed — not performing it
+         · A quiet Sunday morning, coffee, sunlight, no phone in hand
+         · A woman sleeping peacefully (9:16 vertical for mobile impact)
+         · AI-generated (Kie.ai): "peaceful mom relaxing on couch, warm morning light,
+           coffee, kids playing in background, cinematic, soft, hopeful"
+         HOW TO USE: <img src="after-image.jpg" alt="Finally present" style="border-radius:16px; max-width:480px; margin:0 auto 36px; display:block;">
+         NOTE: This is the last emotional hit before the final CTA button. Make it count.
+    -->
+    <div class="media-slot" style="min-height:260px; background:rgba(255,255,255,0.07); border-color:rgba(255,255,255,0.2); max-width:480px; margin:0 auto 40px;">
+      <div class="media-placeholder">
+        <div class="mp-icon">🌅</div>
+        <div class="mp-tag">Media Slot 7 · The "After" Image</div>
+        <div class="mp-title">What Life Looks Like After</div>
+        <div class="mp-desc">A mom who is actually present. Actually rested. Sunday morning light. This is the emotional payoff — the visual promise of what she's buying. Place immediately before the final CTA button.</div>
+      </div>
+    </div>
+    <div class="section-label">You've Been Holding Enough</div>
+    <h2>Give your brain <em>somewhere to rest.</em><br>Finally.</h2>
+    <p>47 prompts. A family operating system. A 7-day detox. A dinner system. A setup guide. Everything built for the mental load you've been carrying alone.</p>
+    <a href="#offer" class="btn-primary" style="font-size:18px; padding:20px 50px;">
+      Get Instant Access for $47 →
+    </a>
+    <span class="btn-guarantee" style="margin-top:14px;">30-day guarantee · Instant download · $67 after launch</span>
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2025 Mom Brain Reset · All rights reserved<br>
+    <a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a> · <a href="#">Contact</a><br><br>
+    Results mentioned are real but individual. The Mom Brain Reset System is a digital product. Results vary based on individual use and consistency. This product is not a substitute for professional medical or psychological advice.
+  </p>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta-text">
+    <strong>Mom Brain Reset — $47</strong>
+    Launch price · 30-day guarantee
+  </div>
+  <a href="#offer" class="btn-sm">Get Access →</a>
+</div>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // Sticky CTA
+  const stickyCta = document.getElementById('stickyCta');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 600) {
+      stickyCta.classList.add('visible');
+    } else {
+      stickyCta.classList.remove('visible');
+    }
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
